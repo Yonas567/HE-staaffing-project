@@ -18,7 +18,7 @@ export default function Home() {
         <div className="Section_top">
           <div className=" flex flex-col justify-center items-center text-white lg:mx-40 mt-20 sm:mt-[50px] md:mt-[100px] lg:mt-[190px]">
             <h1 className="text-2xl md:text-5xl xl:text-[75px]">
-              CROWED MANAGEMENT AND EVENT SECURITY
+              SECURITY, MANAGEMENT, AND CLEANING STAFFING
             </h1>
             <p className=" text-center w-40 lg:w-[700px] h-2 lg:h-[20px]  bg-red-700 transform -skew-x-12 text-red-700 my-6">
               .
