@@ -5,7 +5,7 @@ import { IoMenu } from "react-icons/io5";
 import { FaChevronRight } from "react-icons/fa";
 export default function Header({ nav, setNav }) {
   return (
-    <header className="bg-black">
+    <header className="bg-black fixed z-50 top-0 w-full left-0">
       <article className="bg-black text-white flex items-center justify-between ">
         <h1 className="text-2xl lg:text-5xl md:mr-4 block md:hidden ml-5 py-2 md:py-0">
           HE

@@ -13,7 +13,7 @@ import { FaChevronLeft } from "react-icons/fa";
 import img1 from "/img1.jpg";
 export default function Home() {
   return (
-    <main>
+    <main className="mt-[79px] md:mt-[114px]   lg:mt-[146px] xl:mt-[133px]">
       <section className="hero contrast-100  ">
         <div className="Section_top">
           <div className=" flex flex-col justify-center items-center text-white lg:mx-40 mt-20 sm:mt-[50px] md:mt-[100px] lg:mt-[190px]">
