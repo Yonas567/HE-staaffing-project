@@ -29,18 +29,18 @@ export default function SlidingLogos() {
 
   return (
     <section className="relative flex flex-col  items-center">
-      <button className="sm:hidden absolute -top-6  border-2 bg-red-700 px-4 py-4 border-red-700">
+      <button className="sm:hidden absolute -top-6  border-2 bg-red-700 px-4 py-4 border-red-400">
         TALK TO AN EXPERT
       </button>
       <section className="mt-14 md:mt-20">
-        <h1 className=" text-xl md:text-3xl lg:text-4xl xl:text-5xl text-center">
+        <h1 className=" text-3xl md:text-3xl lg:text-4xl xl:text-5xl text-center">
           TRUSTED BY OUR CLIENTS & PARTNERS
         </h1>
         <div className="flex justify-center items-center ">
           <button onClick={handleLeftMoving} className="hidden lg:block">
             <FaChevronLeft size={50} />
           </button>
-          <body className="xl:w-[1000px] ">
+          <logos className=" logos xl:w-[1000px] ">
             <div class="image-slider">
               <div
                 className={`${isMoving ? "image-slider-track" : "flex"}`}
@@ -88,7 +88,7 @@ export default function SlidingLogos() {
                 </div>
               </div>
             </div>
-          </body>
+          </logos>
           <button onClick={handleRightMoving} className="hidden lg:block">
             <FaChevronRight size={50} />
           </button>

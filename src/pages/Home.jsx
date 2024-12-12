@@ -11,6 +11,7 @@ import logo from "/he-logo.svg";
 import { FaChevronRight } from "react-icons/fa";
 import { FaChevronLeft } from "react-icons/fa";
 import img1 from "/img1.jpg";
+import { Link } from "react-router-dom";
 export default function Home() {
   return (
     <main className="mt-[79px] md:mt-[114px]   lg:mt-[146px] xl:mt-[133px]">

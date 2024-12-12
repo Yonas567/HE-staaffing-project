@@ -7,7 +7,7 @@ import { FaTwitter } from "react-icons/fa";
 import { AiOutlineCopyright } from "react-icons/ai";
 export default function Footer() {
   return (
-    <footer className="bg-black">
+    <footer className="bg-black w-full">
       <section className=" py-28 lg:pt-20 pb-0 px-6 lg:px-2 lg:justify-center md:px-11 text-white flex flex-col lg:flex-row  gap-16 lg:gap-6 xl:gap-20">
         <div>
           <span>
