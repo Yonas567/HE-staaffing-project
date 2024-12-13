@@ -1,6 +1,11 @@
 import ServiceCards from "../components/ServiceCards";
 import ServiceOverview2 from "../components/ServiceOverview2";
 import SlidingLogos from "../components/SlidingLogos";
+import OurAchievements from "../components/OurAchievements";
+import ServiceOverview from "../components/ServicesOverview";
+import SucessStories from "../components/SuccessStories";
+import LookingToWork from "../components/Lookingtowork";
+
 export default function Service() {
   return (
     <main className="mt-[133px]">
@@ -25,7 +30,21 @@ export default function Service() {
       <section>
         <ServiceCards />
       </section>
-      <ServiceOverview2 />
+      <section>
+        <ServiceOverview2 />
+      </section>
+      <section>
+        <OurAchievements />
+      </section>
+      <section>
+        <ServiceOverview />
+      </section>
+      <section>
+        <SucessStories />
+      </section>
+      <section>
+        <LookingToWork />
+      </section>
     </main>
   );
 }
