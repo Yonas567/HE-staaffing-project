@@ -28,7 +28,8 @@ const Dropdown = ({ label, to, items }) => {
     </Link>
   );
 };
-export default function Header({ nav, setNav }) {
+export default function Header() {
+  const [nav, setNav] = useState(false);
   const navItems = [
     {
       label: "SERVICE",
@@ -85,7 +86,10 @@ export default function Header({ nav, setNav }) {
   return (
     <header className="bg-black fixed z-50 top-0 w-full left-0">
       <article className="bg-black text-white flex items-center justify-between">
-        <h1 className="text-2xl lg:text-5xl md:mr-4 block md:hidden ml-5 py-2 md:py-0">
+        <Link
+          className="text-2xl lg:text-5xl md:mr-4 block md:hidden ml-5 py-2 md:py-0"
+          to="./"
+          onClick={() => setNav(false)}>
           HE
           <h2 className="text-[10px]">
             A GRAND FFRCOMPANY
@@ -93,7 +97,7 @@ export default function Header({ nav, setNav }) {
               red
             </p>
           </h2>
-        </h1>
+        </Link>
 
         <div className="hidden md:block">
           <div className="flex flex-col p-2 lg:pt-1 lg:pb-4 xl:px-[150px]">
@@ -104,7 +108,7 @@ export default function Header({ nav, setNav }) {
             </div>
 
             <div className="flex justify-between items-center xl:gap-10">
-              <h1 className="lg:text-5xl md:mr-4">
+              <Link className="lg:text-5xl md:mr-4 " to="./">
                 HE
                 <h2 className="text-[10px]">
                   A GRAND FFRCOMPANY
@@ -112,7 +116,7 @@ export default function Header({ nav, setNav }) {
                     red
                   </p>
                 </h2>
-              </h1>
+              </Link>
 
               <div className="flex text-[11px] lg:text-[14px] gap-2 md:gap-6 xl:gap-10 xl:ml-34">
                 {navItems.map((item, index) => (
@@ -145,7 +149,9 @@ export default function Header({ nav, setNav }) {
           nav ? "block" : "hidden"
         } text-xl md:hidden ml-4 mr-5 text-white`}>
         <div className="flex flex-col h-screen justify-between">
-          <div className="flex flex-col gap-6 mt-16">
+          <div
+            className="flex flex-col gap-6 mt-16"
+            onClick={() => setNav(false)}>
             {navItems.map(({ label, to }) => (
               <Link key={label} to={to}>
                 <div className="flex justify-between items-center pb-2 border-b-2 border-transparent hover:border-red-500">

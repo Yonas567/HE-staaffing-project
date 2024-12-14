@@ -3,16 +3,15 @@ import { useState } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 export default function Layout() {
-  const [nav, setNav] = useState(false);
   return (
     <div>
       <header>
-        <Header nav={nav} setNav={setNav} />
+        <Header />
       </header>
-      <main className={`${nav ? "" : "block"}`}>
+      <main>
         <Outlet />
       </main>
-      <footer className={`${nav ? "" : "block"}`}>
+      <footer>
         <Footer />
       </footer>
     </div>

@@ -5,6 +5,7 @@ import OurAchievements from "../components/OurAchievements";
 import ServiceOverview from "../components/ServicesOverview";
 import SucessStories from "../components/SuccessStories";
 import LookingToWork from "../components/Lookingtowork";
+import Faq from "../components/FAQ";
 
 export default function Service() {
   return (
@@ -41,6 +42,9 @@ export default function Service() {
       </section>
       <section>
         <SucessStories />
+      </section>
+      <section>
+        <Faq />
       </section>
       <section>
         <LookingToWork />
