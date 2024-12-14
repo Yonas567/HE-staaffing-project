@@ -6,7 +6,7 @@ import ServiceOverview from "../components/ServicesOverview";
 import SucessStories from "../components/SuccessStories";
 import LookingToWork from "../components/Lookingtowork";
 import Faq from "../components/FAQ";
-
+import ServiceForm from "../components/ServiceForm";
 export default function Service() {
   return (
     <main className="mt-[133px]">
@@ -45,6 +45,9 @@ export default function Service() {
       </section>
       <section>
         <Faq />
+      </section>
+      <section>
+        <ServiceForm />
       </section>
       <section>
         <LookingToWork />
