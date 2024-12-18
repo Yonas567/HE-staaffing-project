@@ -1,4 +1,5 @@
 import SucessStoriesBgWhite from "../components/SucessStoriesbg-White";
+import Blog from "../components/blog";
 export default function Resources() {
   return (
     <main className="mt-[133px]">
@@ -14,6 +15,9 @@ export default function Resources() {
       </section>
       <section>
         <SucessStoriesBgWhite />
+      </section>
+      <section>
+        <Blog />
       </section>
     </main>
   );

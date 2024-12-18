@@ -44,7 +44,7 @@ export default function SucessStoriesBgWhite() {
           ))}
         </article>
       </article>
-      <span className="flex gap-2 items-center mr-20 md:mr-[250px] lg:mr-[750px] xl:mr-[850px]  mt-14">
+      <span className="flex gap-2 items-center mr-10 md:mr-[250px] lg:mr-[720px] xl:mr-[890px]  mt-14">
         <h1 className="bg-red-700 border-1 border-red-700 px-2 py-4 text-white">
           SEE ALL SUCESS STORIES
         </h1>

@@ -63,7 +63,7 @@ export default function Header() {
     },
     {
       label: "CLIENTS&PARTNERS",
-      to: "/clients", // Main link for CLIENTS&PARTNERS
+      to: "/client & partnership", // Main link for CLIENTS&PARTNERS
       items: [
         { text: "item-1", to: "/clients/item1" },
         { text: "item-2", to: "/clients/item2" },
