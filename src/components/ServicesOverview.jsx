@@ -2,7 +2,7 @@ import { FaChevronRight } from "react-icons/fa";
 export default function ServiceOverview() {
   return (
     <section className="py-20 flex flex-col gap-8">
-      <h1 className="text-[26px] text-center md:text-4xl">
+      <h1 className="text-[26px] text-center md:text-4xl xl:text-5xl">
         TYPES OF VENUS AND EVENTS WE SERVICE
       </h1>
       <p className="text-center leading-normal sm:mx-6 md:mx-10 lg:mx-10 xl:text-xl xl:mx-[200px]">

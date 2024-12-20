@@ -29,7 +29,7 @@ export default function Faq() {
   ];
 
   return (
-    <section className="flex flex-col gap-10 pt-20 pb-4 px-6 md:px-10 xl:mx-40">
+    <section className="flex flex-col gap-10 pt-20 pb-20 px-6 md:px-10 xl:mx-40">
       <h1 className="text-2xl md:text-5xl mb-4">FAQ</h1>
       <div className="flex flex-col gap-10">
         {questionandAnswer.map((section, index) => (

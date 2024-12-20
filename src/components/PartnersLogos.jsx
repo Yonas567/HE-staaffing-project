@@ -1,41 +1,71 @@
+import { useState } from "react";
 import logo from "/he-logo.svg";
-
-// Import all 32 logos...
+import img from "/img2.jpg";
 
 export default function PartnerLogos() {
-  const logos = [
-    logo,
-    logo,
-    logo,
-    logo,
-    logo,
-    logo,
-    logo /* Add the rest of your logos here */,
-  ];
+  const [visibleSection, setVisibleSection] = useState(0);
 
-  // Define unique class names for each section
-  const sectionStyles = [
-    "bg-red-100",
-    "hidden",
-    "bg-blue-100",
-    "bg-yellow-100",
+  const handleSectionClick = (index) => {
+    setVisibleSection((prev) => (prev === index ? index : index)); // Toggle visibility
+  };
+
+  const info = [
+    {
+      button: "All Clients & Partner",
+      logos: [logo, logo, logo, logo, logo, logo],
+    },
+    {
+      button: "Event Security",
+      logos: [logo, logo, logo, logo, logo, logo],
+    },
+    {
+      button: "Event Staffing",
+      logos: [logo, logo, logo, logo, logo, logo],
+    },
+    {
+      button: "Special Events",
+      logos: [logo, logo, logo, logo, logo, logo],
+    },
   ];
 
   return (
-    <main>
-      {sectionStyles.map((style, sectionIndex) => (
-        <section key={sectionIndex} className={`flex ${style} p-4`}>
-          {logos.map((logo, index) => (
-            <div key={index} className="m-2">
-              <img
-                src={logo}
-                alt={`Logo ${index + 1}`}
-                className="h-16 w-auto"
-              />
-            </div>
-          ))}
-        </section>
-      ))}
+    <main className="flex flex-col justify-center mx-40 gap-10 my-20">
+      {/* Buttons Section */}
+      <section className="flex  justify-between mx-10">
+        {info.map((section, sectionIndex) => (
+          <button
+            key={sectionIndex}
+            className={`border-1 border-black p-1 ${
+              visibleSection == sectionIndex
+                ? "p-2 bg-black text-white border-2 border-black"
+                : ""
+            }border-2 border-black `}
+            onClick={() => handleSectionClick(sectionIndex)}>
+            <p className=" ">{section.button}</p>
+          </button>
+        ))}
+      </section>
+
+      {/* Logos Section */}
+      <section className="">
+        {visibleSection !== null && (
+          <div className="flex justify-between">
+            {info[visibleSection].logos.map((logo, i) => (
+              <section>
+                <div key={i} className="">
+                  <img src={logo} alt="Partner logo" className="w-44" />
+                </div>
+                <div key={i} className="">
+                  <img src={logo} alt="Partner logo" className="w-44" />
+                </div>
+                <div key={i} className="">
+                  <img src={logo} alt="Partner logo" className="w-44" />
+                </div>
+              </section>
+            ))}
+          </div>
+        )}
+      </section>
     </main>
   );
 }

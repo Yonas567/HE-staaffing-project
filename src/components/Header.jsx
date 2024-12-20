@@ -5,27 +5,36 @@ import { IoMenu } from "react-icons/io5";
 import { FaChevronRight } from "react-icons/fa";
 
 const Dropdown = ({ label, to, items }) => {
-  return (
-    <Link className="relative" to={to}>
-      <div className="hover:underline decoration-red-500 decoration-2 underline-offset-[12px]">
-        {label}
-      </div>
+  const [isHovered, setIsHovered] = useState(false);
 
-      <div className="hidden hover:block absolute top-10 w-60 bg-black">
-        <ul className="flex justify-between p-4 gap-6 text-[12px]">
+  return (
+    <div
+      className="relative"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}>
+      {/* Main Menu */}
+      <Link
+        to={to}
+        className="hover:underline decoration-red-500 decoration-2 underline-offset-[12px]">
+        {label}
+      </Link>
+
+      {/* Submenu */}
+      <div
+        className={`absolute top-[63px] left-0 w-72 p-4 bg-black transition-all duration-300 ${
+          isHovered ? "opacity-100 visible" : "opacity-0 invisible"
+        }`}>
+        <ul className="grid grid-cols-[0.7fr,1fr] p-4 gap-6 text-[12px]">
           {items.map(({ text, to }, index) => (
-            <div key={index} className="flex flex-col gap-4">
-              <Link
-                className="hover:underline decoration-red-500 decoration-2 underline-offset-[12px]"
-                to={to} // Added the "to" property here
-              >
+            <li key={index}>
+              <Link className="hover:text-red-700 text-sm" to={to}>
                 {text}
               </Link>
-            </div>
+            </li>
           ))}
         </ul>
       </div>
-    </Link>
+    </div>
   );
 };
 export default function Header() {
@@ -33,22 +42,23 @@ export default function Header() {
   const navItems = [
     {
       label: "SERVICE",
-      to: "/service", // Main link for SERVICE
+      to: "/service", // Main link for SECTOR
       items: [
-        { text: "item-1", to: "/service/item1" },
-        { text: "item-2", to: "/service/item2" },
-        { text: "item-3", to: "/service/item3" },
-        { text: "item-4", to: "/service/item4" },
+        { text: "SECURITY STAFFING", to: "/securityStaffing" },
+        { text: "CLEANING STAFFING", to: "/cleaningStaffing" },
+        { text: "MANAGEMENT STAFFING", to: "/managementStaffing" },
+        { text: "CONSULTING", to: "/consulting" },
       ],
     },
     {
       label: "SECTOR",
-      to: "/sector", // Main link for SECTOR
+      to: "/sector", // Main link for SERVICE
       items: [
-        { text: "item-1", to: "/sector/item1" },
-        { text: "item-2", to: "/sector/item2" },
-        { text: "item-3", to: "/sector/item3" },
-        { text: "item-4", to: "/sector/item4" },
+        { text: "HOTELS", to: "/service/item1" },
+        { text: "COLLEGE", to: "/service/item2" },
+        { text: "HOSPITALS", to: "/service/item3" },
+        { text: "PRIVATE COMPANIES", to: "/service/item4" },
+        { text: "GOVERNMENTAL INSTITUTIONS", to: "/" },
       ],
     },
     {

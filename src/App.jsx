@@ -7,6 +7,10 @@ import Layout from "./components/Layout";
 import Resources from "./pages/Resources";
 import ClientAndPartnership from "./pages/ClientAndPartnership";
 /////// sub-pages//////////
+import SecurityStaffing from "./pages/subpages/securityStaffing";
+import CleaningStaffing from "./pages/subpages/cleaningStaffing";
+import ManagementStaffing from "./pages/subpages/managementStaff";
+import Consulting from "./pages/subpages/consulting";
 export default function App() {
   return (
     <Router>
@@ -20,6 +24,10 @@ export default function App() {
             path="client & partnership"
             element={<ClientAndPartnership />}
           />
+          <Route path="securityStaffing" element={<SecurityStaffing />} />
+          <Route path="cleaningStaffing" element={<CleaningStaffing />} />
+          <Route path="managementStaffing" element={<ManagementStaffing />} />
+          <Route path="consulting" element={<Consulting />} />
         </Route>
       </Routes>
     </Router>

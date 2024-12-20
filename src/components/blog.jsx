@@ -11,7 +11,9 @@ export default function Blog() {
   ];
   return (
     <section className="my-16 flex flex-col gap-16 mx-5 md:mx-10 xl:mx-[200px]">
-      <h1 className="flex flex-col gap-10 text-3xl">BLOG</h1>
+      <h1 className="flex flex-col gap-10 text-3xl lg:text-4xl xl:text-5xl">
+        BLOG
+      </h1>
       <div className=" flex flex-col gap-10 lg:flex-row">
         <div className="flex flex-col gap-4">
           <img src="/img4.jpg" />
