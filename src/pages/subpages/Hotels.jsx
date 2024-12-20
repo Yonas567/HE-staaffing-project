@@ -7,16 +7,18 @@ import SucessStories from "../../components/SuccessStories.jsx";
 import ServiceForm from "../../components/ServiceForm.jsx";
 import LookingToWork from "../../components/Lookingtowork.jsx";
 import Faq from "../../components/FAQ.jsx";
-export default function Consulting() {
+export default function Hotels() {
   return (
-    <main>
-      <section className="mt-[133px]">
+    <main className="mt-[133px]">
+      <section>
         <HalfColorImage />
       </section>
       <section>
         <SlidingLogos />
       </section>
-      <section>{/* <GrayBgDescription /> */}</section>
+      <section>
+        <GrayBgDescription />
+      </section>
       <section>
         <OurAchievements />
       </section>

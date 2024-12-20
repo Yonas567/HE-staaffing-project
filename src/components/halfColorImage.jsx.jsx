@@ -33,6 +33,31 @@ export default function HalfColorImage() {
       sub: " OUR EVENT STAFFING SERVICE PROVIDE THE SUPPORT YOU NEED, FROM PARKING ATTENDANTS TO STAFF SECURITY AND MORE.",
       img: "/img2.jpg",
     },
+    "/hotels": {
+      main: "HOTELS",
+      sub: " OUR EVENT STAFFING SERVICE PROVIDE THE SUPPORT YOU NEED, FROM PARKING ATTENDANTS TO STAFF SECURITY AND MORE.",
+      img: "/img2.jpg",
+    },
+    "/hospitals": {
+      main: "HOSPITALS",
+      sub: " OUR EVENT STAFFING SERVICE PROVIDE THE SUPPORT YOU NEED, FROM PARKING ATTENDANTS TO STAFF SECURITY AND MORE.",
+      img: "/img2.jpg",
+    },
+    "/college": {
+      main: "COLLEGES",
+      sub: " OUR EVENT STAFFING SERVICE PROVIDE THE SUPPORT YOU NEED, FROM PARKING ATTENDANTS TO STAFF SECURITY AND MORE.",
+      img: "/img2.jpg",
+    },
+    "/storesandmalls": {
+      main: "STORES AND MALLS",
+      sub: " OUR EVENT STAFFING SERVICE PROVIDE THE SUPPORT YOU NEED, FROM PARKING ATTENDANTS TO STAFF SECURITY AND MORE.",
+      img: "/img2.jpg",
+    },
+    "/corporateoffices": {
+      main: "CORPORATE OFFICE",
+      sub: " OUR EVENT STAFFING SERVICE PROVIDE THE SUPPORT YOU NEED, FROM PARKING ATTENDANTS TO STAFF SECURITY AND MORE.",
+      img: "/img2.jpg",
+    },
   };
   const title = titles[normalizedPathname];
   return (

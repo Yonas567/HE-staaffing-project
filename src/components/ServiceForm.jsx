@@ -100,9 +100,10 @@ export default function ServiceForm() {
                 value={formData[section.name]} // Dynamically access the correct value
                 onChange={handleChange} // Correctly bind the handleChange function
                 placeholder={section.placeholder}
-                className={`border-2 border-white px-4 py-2 text-black ${
-                  index === attributes.length - 1 ? " pb-16 " : "py-10"
-                }`}
+                className={`border-2 border-white 
+                 px-4 py-2 text-black ${
+                   index === attributes.length - 1 ? " pb-16 " : "py-10"
+                 }`}
               />
             </div>
           ))}

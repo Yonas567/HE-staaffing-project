@@ -21,13 +21,13 @@ const Dropdown = ({ label, to, items }) => {
 
       {/* Submenu */}
       <div
-        className={`absolute top-[63px] left-0 w-72 p-4 bg-black transition-all duration-300 ${
+        className={`absolute top-[63px] left-0 w-80 p-4 bg-black transition-all duration-300 ${
           isHovered ? "opacity-100 visible" : "opacity-0 invisible"
         }`}>
-        <ul className="grid grid-cols-[0.7fr,1fr] p-4 gap-6 text-[12px]">
+        <ul className="grid grid-cols-[1fr,1fr] p-4 gap-8 text-[12px]">
           {items.map(({ text, to }, index) => (
             <li key={index}>
-              <Link className="hover:text-red-700 text-sm" to={to}>
+              <Link className="hover:text-red-700 text-sm " to={to}>
                 {text}
               </Link>
             </li>
@@ -54,41 +54,33 @@ export default function Header() {
       label: "SECTOR",
       to: "/sector", // Main link for SERVICE
       items: [
-        { text: "HOTELS", to: "/service/item1" },
-        { text: "COLLEGE", to: "/service/item2" },
-        { text: "HOSPITALS", to: "/service/item3" },
-        { text: "PRIVATE COMPANIES", to: "/service/item4" },
-        { text: "GOVERNMENTAL INSTITUTIONS", to: "/" },
+        { text: "HOTELS", to: "/hotels" },
+        { text: "COLLEGE", to: "/college" },
+        { text: "HOSPITALS", to: "/hospitals" },
+        { text: "STORES AND MALLS", to: "/storesandmalls" },
+        { text: "CORPORATE OFFICES", to: "/corporateoffices" },
       ],
     },
     {
       label: "RESOURCES",
       to: "/resources", // Main link for RESOURCES
       items: [
-        { text: "item-1", to: "/resources/item1" },
-        { text: "item-2", to: "/resources/item2" },
-        { text: "item-3", to: "/resources/item3" },
-        { text: "item-4", to: "/resources/item4" },
+        { text: "SUCESS STORIES", to: "/resources/item1" },
+        { text: "BLOG", to: "/resources/item2" },
       ],
     },
     {
       label: "CLIENTS&PARTNERS",
       to: "/client & partnership", // Main link for CLIENTS&PARTNERS
-      items: [
-        { text: "item-1", to: "/clients/item1" },
-        { text: "item-2", to: "/clients/item2" },
-        { text: "item-3", to: "/clients/item3" },
-        { text: "item-4", to: "/clients/item4" },
-      ],
+      items: [{ text: "CLIENTS&PARTNERS", to: "/client & partnership" }],
     },
     {
       label: "COMPANY",
       to: "/company", // Main link for COMPANY
       items: [
-        { text: "item-1", to: "/company/item1" },
-        { text: "item-2", to: "/company/item2" },
-        { text: "item-3", to: "/company/item3" },
-        { text: "item-4", to: "/company/item4" },
+        { text: "LOCATION", to: "/company/item1" },
+        { text: "ABOUT US", to: "/company/item2" },
+        { text: "CARRIERS", to: "/company/item2" },
       ],
     },
   ];

@@ -1,6 +1,6 @@
 import HalfColorImage from "../../components/halfColorImage.jsx";
 import SlidingLogos from "../../components/SlidingLogos";
-import Description from "./subpagesComponenet/grayBgDescription";
+import GrayBgDescription from "./subpagesComponenet/grayBgDescription.jsx";
 import OurAchievements from "../../components/OurAchievements.jsx";
 import ServiceOverview from "../../components/ServicesOverview.jsx";
 import SucessStories from "../../components/SuccessStories.jsx";
@@ -17,7 +17,7 @@ export default function CleaningStaffing() {
         <SlidingLogos />
       </section>
       <section>
-        <Description />
+        <GrayBgDescription />
       </section>
       <section>
         <OurAchievements />

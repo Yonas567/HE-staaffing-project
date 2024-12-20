@@ -1,5 +1,5 @@
 import SlidingLogos from "../../components/SlidingLogos";
-import Description from "./subpagesComponenet/grayBgDescription";
+import GrayBgDescription from "./subpagesComponenet/grayBgDescription.jsx";
 import HalfColorImage from "../../components/halfColorImage.jsx";
 import OurAchievements from "../../components/OurAchievements.jsx";
 import ServiceOverview from "../../components/ServicesOverview.jsx";
@@ -17,7 +17,7 @@ export default function SecurityStaffing() {
         <SlidingLogos />
       </section>
       <section>
-        <Description />
+        <GrayBgDescription />
       </section>
 
       <section>
