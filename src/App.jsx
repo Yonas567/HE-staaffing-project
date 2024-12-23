@@ -16,6 +16,11 @@ import Hospitals from "./pages/subpages/Hospitals";
 import College from "./pages/subpages/College";
 import StoresAndMalls from "./pages/subpages/StoresAndMalls";
 import CorporateOffices from "./pages/subpages/CorporateOffices";
+import SuccessStoriesSub from "./pages/subpages/successStories sub";
+import BlogSub from "./pages/subpages/blogSub";
+import ContactUs from "./pages/subpages/ContactUs";
+import AboutUs from "./pages/subpages/AboutUs";
+import Carriers from "./pages/carriers";
 export default function App() {
   return (
     <Router>
@@ -38,6 +43,11 @@ export default function App() {
           <Route path="college" element={<College />} />
           <Route path="storesandmalls" element={<StoresAndMalls />} />
           <Route path="corporateoffices" element={<CorporateOffices />} />
+          <Route path="successstoriessub" element={<SuccessStoriesSub />} />
+          <Route path="blogsub" element={<BlogSub />} />
+          <Route path="contactus" element={<ContactUs />} />
+          <Route path="aboutus" element={<AboutUs />} />
+          <Route path="carriers" element={<Carriers />} />
         </Route>
       </Routes>
     </Router>

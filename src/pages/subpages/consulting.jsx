@@ -16,7 +16,9 @@ export default function Consulting() {
       <section>
         <SlidingLogos />
       </section>
-      <section>{/* <GrayBgDescription /> */}</section>
+      <section>
+        <GrayBgDescription />
+      </section>
       <section>
         <OurAchievements />
       </section>

@@ -52,7 +52,7 @@ export default function Header() {
     },
     {
       label: "SECTOR",
-      to: "/sector", // Main link for SERVICE
+      to: "/hotels", // Main link for SERVICE
       items: [
         { text: "HOTELS", to: "/hotels" },
         { text: "COLLEGE", to: "/college" },
@@ -65,8 +65,8 @@ export default function Header() {
       label: "RESOURCES",
       to: "/resources", // Main link for RESOURCES
       items: [
-        { text: "SUCESS STORIES", to: "/resources/item1" },
-        { text: "BLOG", to: "/resources/item2" },
+        { text: "SUCESS STORIES", to: "/successstoriessub" },
+        { text: "BLOG", to: "/blogsub" },
       ],
     },
     {
@@ -78,9 +78,9 @@ export default function Header() {
       label: "COMPANY",
       to: "/company", // Main link for COMPANY
       items: [
-        { text: "LOCATION", to: "/company/item1" },
-        { text: "ABOUT US", to: "/company/item2" },
-        { text: "CARRIERS", to: "/company/item2" },
+        { text: "CONTACT US", to: "/contactus" },
+        { text: "ABOUT US", to: "/aboutus" },
+        { text: "CARRIERS", to: "/carriers" },
       ],
     },
   ];
@@ -105,7 +105,9 @@ export default function Header() {
           <div className="flex flex-col p-2 lg:pt-1 lg:pb-4 xl:px-[150px]">
             <div className="flex justify-end gap-4 items-center">
               <h1>+251-983-373-67</h1>
-              <button className="border-[1px] border-white p-2">CARRIER</button>
+              <button className="border-[1px] border-white p-2">
+                <Link to="/carriers">CARRIER</Link>
+              </button>
               <h1>FR</h1>
             </div>
 

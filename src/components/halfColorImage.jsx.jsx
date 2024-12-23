@@ -11,7 +11,7 @@ export default function HalfColorImage() {
     "/resources": {
       main: "RESOURCES",
       img: "/img2.jpg",
-      style: "h-200px",
+      style: "xl:h-[300px] text-4xl",
     },
     "/client & partnership": {
       main: "CLIENTS AND PARTNERS",
@@ -58,6 +58,26 @@ export default function HalfColorImage() {
       sub: " OUR EVENT STAFFING SERVICE PROVIDE THE SUPPORT YOU NEED, FROM PARKING ATTENDANTS TO STAFF SECURITY AND MORE.",
       img: "/img2.jpg",
     },
+    "/successstoriessub": {
+      main: "SUCCESS STORIS",
+      img: "/img2.jpg",
+      style: "xl:h-[300px] text-5xl  ",
+    },
+    "/blogsub": {
+      main: "BLOG",
+      img: "/img2.jpg",
+      style: "xl:h-[300px] text-5xl ",
+    },
+    "/contactus": {
+      main: "CONTACT US",
+      img: "/img2.jpg",
+      style: "xl:h-[300px] text-5xl ",
+    },
+    "/aboutus": {
+      main: "ABOUT US",
+      img: "/img2.jpg",
+      style: "xl:h-[300px] text-5xl ",
+    },
   };
   const title = titles[normalizedPathname];
   return (
@@ -69,7 +89,12 @@ export default function HalfColorImage() {
           } `}>
           <div>
             {title ? (
-              <h1 className="text-3xl md:text-5xl xl:text-6xl">{title.main}</h1>
+              <h1
+                className={` text-3xl md:text-5xl xl:text-6xl  ${
+                  title?.style || ""
+                }`}>
+                {title.main}
+              </h1>
             ) : null}
           </div>
           <div>
@@ -77,7 +102,12 @@ export default function HalfColorImage() {
           </div>
         </div>
         <div>
-          {title ? <img src={title.img} className="hidden lg:block" /> : null}
+          {title ? (
+            <img
+              src={title.img}
+              className={`hidden lg:block  ${title?.style || ""}`}
+            />
+          ) : null}
         </div>
       </article>
     </section>
