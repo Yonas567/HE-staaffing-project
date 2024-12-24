@@ -134,7 +134,7 @@ export default function Header() {
               </div>
 
               <button className="border-2 border-red-700 text-[11px] xl:text-[15px] p-1 xl:px-4 xl:py-2 bg-red-700 ml-4 xl:ml-20">
-                <Link to="/talk-to-expert">TALK TO AN EXPERT</Link>
+                <Link to="/talktoanexpert">TALK TO AN EXPERT</Link>
               </button>
             </div>
           </div>
