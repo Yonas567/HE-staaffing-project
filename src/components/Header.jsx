@@ -52,7 +52,7 @@ export default function Header() {
     },
     {
       label: "SECTOR",
-      to: "/hotels", // Main link for SERVICE
+      to: "#", // Main link for SERVICE
       items: [
         { text: "HOTELS", to: "/hotels" },
         { text: "COLLEGE", to: "/college" },
@@ -76,7 +76,7 @@ export default function Header() {
     },
     {
       label: "COMPANY",
-      to: "/company", // Main link for COMPANY
+      to: "#", // Main link for COMPANY
       items: [
         { text: "CONTACT US", to: "/contactus" },
         { text: "ABOUT US", to: "/aboutus" },

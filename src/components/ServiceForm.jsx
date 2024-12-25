@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useLocation } from "react-router-dom";
 
 export default function ServiceForm() {
   const [formData, setFormData] = useState({
@@ -77,12 +78,31 @@ export default function ServiceForm() {
       placeholder: "Enter additional details",
     },
   ];
+  const address = [
+    {
+      path: "/service",
+      bg: "img5.jpg",
+    },
+    {
+      path: "/talktoanexpert",
+      bg: null,
+    },
+  ];
+  const { pathname } = useLocation();
+  const normalizedPathname = decodeURIComponent(pathname);
 
+  const matchedPath = address.find((data) => data.path === normalizedPathname);
+
+  if (!matchedPath) return null;
+
+  const { bg } = matchedPath;
   return (
     <form
       onSubmit={handleSubmit}
       style={{
-        backgroundImage: `url('/img5.jpg')`, // Replace with the actual image path
+        backgroundImage: `url('${bg}')`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
       }}
       className=" flex flex-col items-center justify-center gap-8 lg:items-start mt-20 mb-3">
       <div className="bg-red-700 mx-4 md:mx-10 my-20 py-2 lg:mr-96 xl:mr-[800px]">
