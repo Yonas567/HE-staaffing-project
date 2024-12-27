@@ -1,18 +1,17 @@
+import HeaderForJob from "./headerForJob";
+import FooterForJob from "./FooterForJob";
 import { Outlet } from "react-router-dom";
-
-import Header from "./Header";
-import Footer from "./Footer";
 export default function Layout() {
   return (
     <div>
       <header>
-        <Header />
+        <HeaderForJob />
       </header>
       <main>
         <Outlet />
       </main>
       <footer>
-        <Footer />
+        <FooterForJob />
       </footer>
     </div>
   );

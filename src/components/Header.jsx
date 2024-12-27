@@ -106,7 +106,9 @@ export default function Header() {
             <div className="flex justify-end gap-4 items-center">
               <h1>+251-983-373-67</h1>
               <button className="border-[1px] border-white p-2">
-                <Link to="/carriers">CARRIER</Link>
+                <a href="/carriers" target="_blank" rel="noopener noreferrer">
+                  CARRIER
+                </a>
               </button>
               <h1>FR</h1>
             </div>

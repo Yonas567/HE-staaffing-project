@@ -8,7 +8,9 @@ export default function Carriers() {
           onClick={() => document.getElementById("my_modal_5").showModal()}>
           Apply
         </button>
-        <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
+        <dialog
+          id="my_modal_5"
+          className="modal modal-bottom sm:modal-middle px-100">
           <div className="modal-box">
             <h3 className="font-bold text-lg">Hello!</h3>
             <input placeholder="hey" />

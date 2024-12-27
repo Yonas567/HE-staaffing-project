@@ -20,8 +20,11 @@ import SuccessStoriesSub from "./pages/subpages/successStories sub";
 import BlogSub from "./pages/subpages/blogSub";
 import ContactUs from "./pages/subpages/ContactUs";
 import AboutUs from "./pages/subpages/AboutUs";
-import Carriers from "./pages/carriers";
 import TalkToAnExpert from "./pages/talkToAnExpert";
+///////Job-Applying///////////
+import LayoutForJob from "./Job/jobComponents/LayoutForJob";
+import Carriers from "./pages/carriers";
+import JobDetail from "./Job/jobComponents/JobDescription";
 export default function App() {
   return (
     <Router>
@@ -48,8 +51,12 @@ export default function App() {
           <Route path="blogsub" element={<BlogSub />} />
           <Route path="contactus" element={<ContactUs />} />
           <Route path="aboutus" element={<AboutUs />} />
-          <Route path="carriers" element={<Carriers />} />
+
           <Route path="talktoanexpert" element={<TalkToAnExpert />} />
+        </Route>
+        <Route path="/" element={<LayoutForJob />}>
+          <Route path="carriers" element={<Carriers />} />
+          <Route path="jobdetail" element={<JobDetail />} />
         </Route>
       </Routes>
     </Router>
