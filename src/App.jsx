@@ -23,7 +23,7 @@ import AboutUs from "./pages/subpages/AboutUs";
 import TalkToAnExpert from "./pages/talkToAnExpert";
 ///////Job-Applying///////////
 import LayoutForJob from "./Job/jobComponents/LayoutForJob";
-import Carriers from "./pages/carriers";
+import Carriers from "./Job/carriers";
 import JobDetail from "./Job/jobComponents/JobDescription";
 export default function App() {
   return (
