@@ -5,7 +5,7 @@ import OurAchievements from "../components/OurAchievements";
 import ServiceOverview from "../components/ServicesOverview";
 import SucessStories from "../components/SuccessStories";
 import LookingToWork from "../components/Lookingtowork";
-import Faq from "../components/FAQ";
+import Faq from "../components/Faq";
 import ServiceForm from "../components/ServiceForm";
 import HalfColorImage from "../components/halfColorImage.jsx.jsx";
 export default function Service() {

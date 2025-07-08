@@ -6,7 +6,7 @@ import ServiceOverview from "../../components/ServicesOverview.jsx";
 import SucessStories from "../../components/SuccessStories.jsx";
 import ServiceForm from "../../components/ServiceForm.jsx";
 import LookingToWork from "../../components/Lookingtowork.jsx";
-import Faq from "../../components/FAQ.jsx";
+import Faq from "../../components/Faq.jsx";
 export default function StoresAndMalls() {
   return (
     <main className="mt-[133px]">
